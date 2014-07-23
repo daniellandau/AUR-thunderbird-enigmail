@@ -17,9 +17,9 @@ url="https://www.enigmail.net/"
 license=('MPL' 'GPL')
 depends=('thunderbird' 'gnupg')
 makedepends=('zip' 'unzip' 'python2' 'perl>=5.8')
-source=("https://www.enigmail.net/download/source/enigmail-${pkgver}.tar.gz")
-sha256sums=('cddbf35783194a4e994f9584ad5bee74750e25f690e81727ba9eccc4f814f161')
-
+source=("https://www.enigmail.net/download/source/enigmail-${pkgver}.tar.gz"{,.asc}) # gpg --recv-keys E443D6D8
+sha256sums=('cddbf35783194a4e994f9584ad5bee74750e25f690e81727ba9eccc4f814f161'
+            'SKIP')
 
 build() {
   cd "$srcdir/enigmail"
