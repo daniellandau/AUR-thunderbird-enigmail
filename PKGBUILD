@@ -10,7 +10,7 @@
 
 pkgname=thunderbird-enigmail
 pkgver=1.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Thunderbird extension that enables sending and receiving signed and encrypted e-mail messages"
 arch=('i686' 'x86_64')
 url="https://www.enigmail.net/"
